@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Alert, TouchableHighlight } from 'react-native';
 
 const MenuBlock = React.createClass({
 
@@ -13,13 +13,19 @@ const MenuBlock = React.createClass({
     };
   },
 
+  onBlockClick: function(){
+    Alert.alert('Data', this.state.data.toString());
+  },
+
   render: function() {
     return (
-      <View style={styles.block}>
-        <Text style={styles.text}>
-          {this.state.data}
-        </Text>
-      </View>
+      <TouchableHighlight onPress={this.onBlockClick}>
+        <View style={styles.block}>
+          <Text style={styles.text}>
+            {this.state.data}
+          </Text>
+        </View>
+      </TouchableHighlight>
     );
   }
 });

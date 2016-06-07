@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import MenuBlock from "./menuBlock.js";
+import MenuBlockEmpty from "./menuBlockEmpty.js";
 
 const MenuBlockList = React.createClass({
 
@@ -18,6 +19,8 @@ const MenuBlockList = React.createClass({
       obj = <MenuBlock key={i} data={obj}/>;
       objects.push(obj);
     }
+
+    objects.push(<MenuBlockEmpty key={i}/>);
 
     return objects;
   },
