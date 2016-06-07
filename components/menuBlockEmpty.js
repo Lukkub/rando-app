@@ -19,13 +19,11 @@ const MenuBlockEmpty = React.createClass({
 
   render: function() {
     return (
-      <TouchableHighlight onPress={this.onBlockClick}>
         <View style={styles.block}>
           <Text style={styles.text}>
             ...
           </Text>
         </View>
-      </TouchableHighlight>
     );
   }
 });

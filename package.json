@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-native": "0.27.0",
-    "react-native-vector-icons": "2.0.3"
+    "react-native-vector-icons": "2.0.3",
+    "falcor": "git@github.com:Netflix/falcor.git#f2cafdf"
   }
 }
